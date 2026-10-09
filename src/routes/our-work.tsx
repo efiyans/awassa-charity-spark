@@ -1,0 +1,6 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { StoryPage } from "@/components/awassa";
+export const Route = createFileRoute("/our-work")({
+  head: () => ({ meta: [{ title: "Our vision | Awassa Children's Project" }, { name: "description", content: "Care, learning, and opportunity: a vision for children's futures." }, { property: "og:title", content: "Our vision | Awassa Children's Project" }, { property: "og:description", content: "Because a childhood changes everything." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }),
+  component: () => <StoryPage eyebrow="Why children?" title="Because a childhood changes everything." text="The way a child experiences the world can shape a lifetime. Our vision begins with the things every child deserves." points={[{ title: "Care and belonging", text: "A safe, caring community and the knowledge that someone believes in you." }, { title: "Learning and discovery", text: "Space to ask questions, explore ideas, and discover your potential." }, { title: "Opportunity and hope", text: "The chance to look ahead with confidence and imagine your own future." }]} />,
+});

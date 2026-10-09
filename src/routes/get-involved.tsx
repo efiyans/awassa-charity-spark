@@ -1,0 +1,6 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { StoryPage } from "@/components/awassa";
+export const Route = createFileRoute("/get-involved")({
+  head: () => ({ meta: [{ title: "Get involved | Awassa Children's Project" }, { name: "description", content: "Be part of a community that believes in children's futures." }, { property: "og:title", content: "Get involved | Awassa Children's Project" }, { property: "og:description", content: "A brighter future starts with all of us." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }),
+  component: () => <StoryPage eyebrow="Take action" title="A brighter future starts with all of us." text="Generosity takes many forms. Your interest in Awassa Children's Project is a first step toward a community that puts children first." points={[{ title: "Give with kindness", text: "Choose a one-time or monthly amount on our homepage. Online payments are not yet available." }, { title: "Share the vision", text: "Introduce a friend to Awassa Children's Project and the importance of a caring childhood." }, { title: "Stay connected", text: "Come back as the project shares more about its story and opportunities to get involved." }]} />,
+});
